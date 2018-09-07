@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="middle"
+        android:text="0x2222334helloworldaaaaaaaaaaaaaaaaaaaaaa"
+        android:textSize="20sp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/recordingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:text="2018-08-15 11:48"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv1"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=" + " />
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/RMB1value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0.2800" />
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/flag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="ether" />
+    </LinearLayout>
+
+</RelativeLayout>

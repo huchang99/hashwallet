@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">hashwallet</string>
+    <string name="firstLoginText">你的第一个智能数字钱包</string>
+    <string name="HashName">HashWallet</string>
+    <string name="CreateWalletTv">创建钱包</string>
+    <string name="ImportWalletTv">导入钱包</string>
+    <string name="backupmemorywords1">请抄写您的助记词</string>
+    <string name="backupmemorywords2">我已安全保存</string>
+    <string name="backuptitle1">备份助记词</string>
+    <string name="backuptitle2">验证助记词</string>
+
+
+</resources>

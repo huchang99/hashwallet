@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BackupMemoryWordsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bc_screen">
+
+        <TextView
+            android:id="@+id/backuptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/backuptitle1"
+            android:textSize="22sp"
+            android:textColor="@color/White"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/memorywordback"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/backuptitle"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/backupmemorywords1"
+        android:textSize="15sp"
+        android:textColor="@color/Grey"
+        android:gravity="center"
+       />
+
+    <GridView
+        android:id="@+id/BackupWordsgridView"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"
+        >
+    </GridView>
+
+
+    <ViewStub
+        android:id="@+id/backwVstub1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/BackupWordsStubView"
+        android:layout="@layout/memorywordsstub"
+        />
+
+
+</LinearLayout>

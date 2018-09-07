@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:background="@color/Grey"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/OrderNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textColor="@color/White"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/ItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="TextView01"
+        android:textSize="15sp"
+        android:textColor="@color/White"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/OrderNum"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        >
+    </TextView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="请输入密码"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal" >
+        <!--
+             inputType设置隐藏密码明文
+             textSize设置大一点，否则“点”太小了，不美观
+        -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+        <EditText
+            android:id="@+id/tv_pass1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <EditText
+            android:id="@+id/tv_pass2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <EditText
+            android:id="@+id/tv_pass3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <EditText
+            android:id="@+id/tv_pass4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <EditText
+            android:id="@+id/tv_pass5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <EditText
+            android:id="@+id/tv_pass6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+    <Button
+        android:id="@+id/OkPsw"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/keybackground"
+        android:layout_marginTop="20dp"
+        android:text="确认发送"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+</LinearLayout>

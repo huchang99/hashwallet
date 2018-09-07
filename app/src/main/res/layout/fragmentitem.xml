@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bitvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:text="0.00"/>
+    <TextView
+        android:id="@+id/bitTitleTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="EEE"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/bitTitleRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bitvalue"
+        android:layout_marginLeft="20dp"
+        android:text="FFF"
+        android:layout_centerVertical="true"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/bitTitleTop"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/back"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/bitvalue"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/RMBValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/RMBValue"
+            android:layout_marginLeft="15sp"
+            android:layout_centerVertical="true"
+            android:text="CNY"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/RMBValue"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/equal"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

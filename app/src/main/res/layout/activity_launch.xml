@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchActivity"
+    android:background="@drawable/launch_screen">
+
+    <TextView
+        android:id="@+id/firstLoginTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstLoginText"
+        android:textSize="18sp"
+        android:textColor="@color/White"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HashName"
+        android:textSize="30sp"
+        android:textColor="@color/White"
+        android:layout_above="@+id/firstLoginTv"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/creatWalletbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstLoginTv"
+        android:background="@drawable/cwalletbtselect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/CreateWalletTv"
+        android:textColor="@color/White"
+        android:gravity="center"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/importWalletbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creatWalletbt"
+        android:background="@drawable/cwalletbtselect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/ImportWalletTv"
+        android:textColor="@color/White"
+        android:gravity="center"
+        android:textSize="15sp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/background"
+        >
+        <TextView
+            android:id="@+id/nameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send ETH"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/backtv1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignTop="@id/nameTitle"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/CollectionAddressEt"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="50dp"
+            android:hint="输入收款地址"
+            />
+        <ImageView
+            android:id="@+id/erweimasanpic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/scan"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:id="@+id/TextViewEEE1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="ETH"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/EthValue1"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/Ethequal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/equal"
+            />
+        <TextView
+            android:id="@+id/EthValue2"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="CNY"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:text="当前余额"
+            android:layout_weight="2"/>
+        <TextView
+            android:id="@+id/RemainValue"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:text="0.0000000"
+            android:layout_weight="2"/>
+        <TextView
+            android:id="@+id/TextViewEEE2"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:text="ETH"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="2"
+            android:text="全部发送"
+            android:textColor="#4860F8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="备注（选填）"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/Remarksed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="交易费:"
+        android:paddingLeft="10dp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="30"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+        
+        <TextView
+            android:id="@+id/equalsend"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/equal"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/TextViewEEE3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="EEE"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/equalsend"
+            android:gravity="center"
+            android:paddingRight="5dp"/>
+        <TextView
+            android:id="@+id/tipEEE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0.00"
+            android:textColor="#DD2B18"
+            android:layout_toLeftOf="@id/TextViewEEE3"/>
+
+        <TextView
+            android:id="@+id/CNY_valueSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0.00"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/equalsend"
+            android:gravity="center"
+            android:textColor="#DD2B18"
+            android:paddingRight="5dp"/>
+        <TextView
+            android:id="@+id/CNYflag1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="CNY"
+            android:layout_toRightOf="@id/CNY_valueSend"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="慢"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="慢"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="快"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <Button
+        android:id="@+id/Sendbt1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/keybackground"
+        android:text="发送"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
