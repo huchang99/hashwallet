@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="myselectmenu_attrs">
+        <attr name="image_normal" format="reference"></attr>
+        <attr name="image_selected" format="reference"/>
+        <attr name="text" format="string"></attr>
+        <attr name="text_color_normal" format="color"></attr>
+        <attr name="text_color_selected" format="color"></attr>
+    </declare-styleable>
+</resources>

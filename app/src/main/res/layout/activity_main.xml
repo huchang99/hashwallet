@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,9 +8,9 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/title_layout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="200dp"
         android:background="@drawable/background">
         <TextView
             android:id="@+id/HashWallet"
@@ -77,11 +77,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_height="match_parent"
         android:background="#FFFFFF"
         android:orientation="vertical"
-       >
+        android:layout_below="@id/title_layout"
+        android:layout_marginBottom="70dp">
        <RelativeLayout
            android:id="@+id/RelativeETH"
            android:layout_width="match_parent"
@@ -303,4 +303,54 @@
             android:background="@drawable/fengexian"/>
     </LinearLayout>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <com.example.trezor.hashwalletui.MySelectMeunView
+            android:id="@+id/walletmentbt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text ="钱包"
+            app:image_normal = "@drawable/mywallet_normal"
+            app:image_selected = "@drawable/mywallet_selected"
+            app:text_color_normal = "@color/mainmenu_normal"
+            app:text_color_selected = "@color/mainmenu_selected"
+            android:gravity="center"
+            >
+
+        </com.example.trezor.hashwalletui.MySelectMeunView>
+        <com.example.trezor.hashwalletui.MySelectMeunView
+            android:id="@+id/marketmenubt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text ="行情"
+            app:image_normal = "@drawable/market_normal"
+            app:image_selected = "@drawable/market_selected"
+            app:text_color_normal = "@color/mainmenu_normal"
+            app:text_color_selected = "@color/mainmenu_selected"
+            android:gravity="center"
+            >
+
+        </com.example.trezor.hashwalletui.MySelectMeunView>
+        <com.example.trezor.hashwalletui.MySelectMeunView
+            android:id="@+id/mineinfobt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text ="我的"
+            app:image_normal = "@drawable/mineinfo_normal"
+            app:image_selected = "@drawable/mineinfo_selected"
+            app:text_color_normal = "@color/mainmenu_normal"
+            app:text_color_selected = "@color/mainmenu_selected"
+            android:gravity="center">
+
+        </com.example.trezor.hashwalletui.MySelectMeunView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="White">#FFFFFF</color>
     <color name="Grey">#807D7D</color>
-    <color name="Blue">#54BBF4</color>
+    <color name="Blue">#54bbf4</color>
+    <color name="mainmenu_normal">#bfbfbf</color>
+    <color name="mainmenu_selected">#1296db</color>
 	
 </resources>

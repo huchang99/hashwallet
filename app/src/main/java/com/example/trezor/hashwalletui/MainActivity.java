@@ -2,6 +2,7 @@ package com.example.trezor.hashwalletui;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,11 +10,13 @@ import android.view.Window;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     private RelativeLayout RelativeETH_bt;
     private RelativeLayout RelativeEOS_bt;
     private RelativeLayout RelativeAE_bt;
+
+    private MySelectMeunView walletmentbt,marketmenubt,mineinfobt,lastBottomMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +60,10 @@ public class MainActivity extends Activity {
     }
 
     private void initLinstener() {
+        walletmentbt.setOnClickListener(this);
+        marketmenubt.setOnClickListener(this);
+        mineinfobt.setOnClickListener(this);
+
 
     }
     private void initData() {
@@ -65,7 +72,33 @@ public class MainActivity extends Activity {
         RelativeETH_bt = (RelativeLayout)findViewById(R.id.RelativeETH);
         RelativeEOS_bt = (RelativeLayout)findViewById(R.id.RelativeEOS);
         RelativeAE_bt = (RelativeLayout)findViewById(R.id.RelativeAE);
+        //菜单选项
+        walletmentbt = (MySelectMeunView) findViewById(R.id.walletmentbt);
+        marketmenubt = (MySelectMeunView) findViewById(R.id.marketmenubt);
+        mineinfobt = (MySelectMeunView)findViewById(R.id.mineinfobt);
+        //默认选中第一项
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                walletmentbt.performClick();//模拟点击事件 让首页选中
+            }
+        });
+        //walletmentbt.performClick();
     }
 
 
+    @Override
+    public void onClick(View v) {
+        MySelectMeunView mySelectMeunView = (MySelectMeunView) v;
+        if(mySelectMeunView.isSelect()) {
+            return;
+        }
+        mySelectMeunView.selectMenu();
+        if(lastBottomMenu != null)
+        {
+            lastBottomMenu.unSelectMenu();
+        }
+        lastBottomMenu = mySelectMeunView;
+
+    }
 }
